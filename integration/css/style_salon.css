@@ -1,0 +1,395 @@
+/* -----=====##### COMMUN Mobile #####=====----- */
+*, *::after, *::before {box-sizing: border-box;}
+
+html {font-size: 62.5%; background-color: #808080;} 
+
+body {font-family: 'Gudea', sans-serif; font-size: 1.6rem;}
+
+.container {
+    width: 100%;
+    height: 80%;
+    background-color: #839371;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+a:link {text-decoration: none; color : #fff;}
+
+a:hover {text-decoration: none; color : #C6CDB1;}
+
+b {color: #fff;}
+
+em{font-size:1.5rem;color:#fff;}
+
+
+
+/* -----=====##### HEADER Mobile #####=====----- */
+header {
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    height: 2.9em;
+    padding: 0 0.625em 0.625em 0.625em;
+}
+
+.logo {
+    width: 40%;
+    max-width: 50%;
+    height:70%;
+    margin: 0.625em 0 0.625em 0.100em;
+}
+
+.header__p {display: none;}
+
+.menuBurger {display: block}
+
+.header__clickZone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    height: 3em;
+    margin-right: -0.625em;
+}
+
+.fas.fa-bars {font-size: 2em; color: #000;}
+
+.primary-navigation {display: none;}
+
+
+
+/* -----=====##### MAIN Mobile #####=====----- */
+main {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    width: 95%; /* largeur de la partie MAIN */
+    height: 90vh; /* hauteur de la partie MAIN */
+    margin: 0 auto;
+    overflow:scroll;
+}
+
+.main__top-gallery {
+    position:fixed;
+    z-index: 10;
+    top: 2.9em;
+    left: 0.7em;
+    width: 25.4em;
+    height: 15em;
+    background-color: #000;
+}
+
+.main__artistName {
+    float: left;
+    padding: 1em 1em 0.5em 1em;
+    font-size: 1.6em;
+    color: #765457;
+    font-weight: bold;
+}
+
+.main__p-presentation {
+    color: #C6CDB1;
+    padding: 1.5em 1.5em 0 1.5em;
+    font-size: 1em;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+.main__separation {
+    width:10em;
+    height: 1em;
+    border-top: 1px solid #839371;
+    margin: 0 auto;
+}
+
+.main__infoExpo {
+    text-align: center;
+    color: #fff;
+    padding-top: 1em;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16em;
+}
+
+.wrapper > div {
+    width: 10.8em;
+    height: 10.8em;
+    margin: 1em 1em 1em 1em;
+    border: 0.3125em solid #fff;
+}
+
+.vignettes {
+    width: 10.2em;
+    height: 10.2em;
+    filter: grayscale(50%);
+    transition-property: all;
+    transition-duration: 100ms;
+    transition-delay: 1ms;
+    transition-timing-function: linear;
+}
+
+.vignettes:hover {
+    filter: grayscale(0);
+    width: 110%;
+    height: 110%;
+    margin-top: -5%;
+    margin-left: -5%;
+    border: 0.3125em solid #fff;
+}
+
+
+
+
+/* -----=====##### FOOTER Mobile #####=====----- */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 3em;
+    margin: 1.25em 0;
+}
+
+.secondary-navigation {display: none;}
+
+.footer__clickZone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    height: 3em;
+    margin: -0.625em;
+}
+
+a[class="RS"]:link {text-decoration: none; color: #000;}
+    
+a[class="RS"]:hover {text-decoration: none; color:#fff;}
+
+
+
+
+/* -----=====##### ########## #####=====----- */
+/* -----=====##### BREAKPOINT #####=====----- */
+/* -----=====##### ########## #####=====----- */
+
+@media screen and (min-width: 992px) {
+    
+    
+    /* -----=====##### COMMUN Desktop #####=====----- */
+    body {margin-top: 1.25em;}
+
+    .container {
+        width: 70%;
+        height: 95vh;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    /* -----=====##### HEADER Desktop #####=====----- */
+    header {
+        height: 6.25em;
+    }
+
+    li {font-weight: bold;}
+
+    .header__identity {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.60em 0 0 2em;
+    }
+    
+    .logo {
+        width: 40%;
+        max-width: 50%;
+        height:70%;
+        margin: 0.625em 0 0.625em 0;
+    }
+
+    .header__p {display: inline; font-size: 1.6rem; margin-top: 0.30em;}
+
+    .menuBurger {display:none;}
+    
+
+     /* -----===== Le menu du HEADER Desktop =====----- */
+     .primary-navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto 1em auto 0;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    
+    ul li {
+        list-style: none;
+        margin: 0 auto;
+        border-left: 0.12em solid #765457;
+        display: inline-block;
+        padding: 0 0.93em;
+        position: relative;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    li a {color: #fff;}
+    
+    li a:hover {color: #C6CDB1;}
+    
+    li:hover {cursor: pointer;}
+    
+    ul li ul {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        padding-left: 0;
+        left: 0;
+        display: none;
+        background: #839371;
+    }
+    
+    ul li:hover > ul,
+    ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        min-width: 8.75em;
+        text-align: left;
+        padding-top: 1.25em;
+        box-shadow: 0 0.37em 0.62em -0.06em #808080;
+    }
+    
+    ul li ul li {
+        clear: both;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 1.25em;
+        border-style: none;
+    }
+    
+    ul li ul li a:hover {
+        padding-left: 0.62em;
+        border-left: 0.12em solid #765457;
+        transition: all 0.3s ease;
+    }
+    
+    ul li ul li a { transition: all 0.5s ease; }
+
+    
+
+    /* -----=====##### MAIN Desktop #####=====----- */
+    .main {
+        display : flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: #000;
+        width: 95%; /* largeur de la partie MAIN */
+        height: 76.26vh; /* hauteur de la partie MAIN */
+        margin: 0 auto;
+    }
+
+    .main__top-gallery {
+        position: static;
+        z-index: 10;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 8.5em;
+        margin: 0 0 0 0;
+        align-items: center;
+    }
+
+    .main__artistName {
+        float: none;
+        width: 70%;
+        height: 20%;
+        padding: 0 0 0 1.5em;
+        font-size: 1.6em;
+        color: #765457;
+        font-weight: bold;
+    }
+    
+    .main__p-presentation {
+        color: #C6CDB1;
+        width: 75em;
+        height: 25%;
+        padding: 0 0 0 2em;
+        font-size: 1em;
+        text-align: justify;
+    }
+    
+    .main__separation {display: none;}
+
+    .main__infoExpo {
+        width: 40%;
+        height: 20%;
+        padding: 1em 0 0 1.5em;
+        color: #fff;
+        text-align: left;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width:95%;
+        margin: -2em auto;
+    }
+    
+    .wrapper > div {
+        width: 10.8em;
+        height: 10.8em;
+        margin: 2em 1.8em 2em 1.8em;
+        border: 0.3125em solid #fff;
+    }
+    
+    .vignettes {
+        width: 10.2em;
+        height: 10.2em;
+        filter: grayscale(50%);
+        transition-property: all;
+        transition-duration: 100ms;
+        transition-delay: 1ms;
+        transition-timing-function: linear;
+    }
+    
+    .vignettes:hover {
+        filter: grayscale(0);
+        width: 110%;
+        height: 110%;
+        margin-top: -5%;
+        margin-left: -5%;
+        border: 0.3125em solid #fff;
+    }
+
+
+
+/* -----=====##### FOOTER Desktop #####=====----- */
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 97%;
+        height: 3em;
+        margin: 2em 0 0 1.7em;
+    }
+
+    .footer_nav {display: block;}
+
+    .secondary-navigation {display:inline;}
+
+}
+
+
+
+
+
+

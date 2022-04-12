@@ -1,0 +1,387 @@
+/* -----=====##### COMMUN Mobile #####=====----- */
+*, *::after, *::before {box-sizing: border-box;}
+
+html {font-size: 62.5%; background-color: #808080;} 
+
+body {font-family: 'Gudea', sans-serif; font-size: 1.6rem;}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #839371;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+a:link {text-decoration: none; color : #fff;}
+
+a:hover {text-decoration: none; color : #C6CDB1;}
+
+b {color: #fff;}
+
+em{font-size:1.5rem;color:#fff;}
+
+
+
+/* -----=====##### HEADER Mobile #####=====----- */
+header {
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    height: 2.9em;
+    padding: 0 0.625em 0.625em 0.625em;
+}
+
+.logo {
+    width: 40%;
+    max-width: 50%;
+    height:70%;
+    margin: 0.625em 0 0.625em 0.100em;
+}
+
+.header__p {display: none;}
+
+.menuBurger {display: block}
+
+.header__clickZone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    height: 3em;
+    margin-right: -0.625em;
+}
+
+.fas.fa-bars {font-size: 2em; color: #000;}
+
+.primary-navigation {display: none;}
+
+
+
+/* -----=====##### MAIN Mobile #####=====----- */
+main {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF;
+    width: 95%; /* largeur de la partie MAIN */
+    height: 89.084vh; /* hauteur de la partie MAIN */
+    margin: 0 auto;
+    overflow:scroll;
+}
+
+.main__div-topo {
+    margin: 1.25em 1.25em 3em 1.25em;
+    text-align: justify;
+}
+
+.topHorizontaleDividingLine{display: none;}
+.bottomHorizontaleDividingLine {display: none;}
+
+.main__div-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+    height: 83vh;   
+}
+
+.h2-actu {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #785558;
+    margin: 0 auto 1.25em auto;
+}
+
+div#sliderDesktop {display: none;}
+
+div#sliderMobile { width: 80%; max-width: 18.75em; overflow: hidden;}
+
+div#sliderMobile figure {
+    position: relative; 
+    width: 400%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+    animation: 30s slidy infinite;
+}
+
+div#sliderMobile figure img { width: 25%; height: auto; float: left;}
+
+@keyframes slidy {
+    0% { left: 0%; }
+    28% { left: 0%; }
+    33% { left: -100%; }
+    61% { left: -100%; }
+    66% { left: -200%; }
+    95% { left: -200%; }
+    100% { left: -300%; }
+}
+
+.main__div-actu {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    padding: 0 1.25em;
+}
+
+.h2-proch {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #785558;
+    margin-bottom: 1.25em;
+}
+
+.main__p-proch {margin-bottom: 1.25em;}
+
+
+
+/* -----=====##### FOOTER Mobile #####=====----- */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 3em;
+    margin: 1.25em 0;
+}
+
+.secondary-navigation {display: none;}
+
+.footer__clickZone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    height: 3em;
+    margin: -0.625em;
+}
+
+a[class="RS"]:link {text-decoration: none; color: #000;}
+    
+a[class="RS"]:hover {text-decoration: none; color:#fff;}
+
+
+
+
+/* -----=====##### ########## #####=====----- */
+/* -----=====##### BREAKPOINT #####=====----- */
+/* -----=====##### ########## #####=====----- */
+
+@media screen and (min-width: 992px) {
+    
+    
+    /* -----=====##### COMMUN Desktop #####=====----- */
+    body {margin-top: 1.25em;}
+
+    .container {
+        width: 70%;
+        height: 95vh;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    /* -----=====##### HEADER Desktop #####=====----- */
+    header {
+        height: 6.25em;
+    }
+
+    li {font-weight: bold;}
+
+    .header__identity {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.60em 0 0 2em;
+    }
+    
+    .logo {
+        width: 40%;
+        max-width: 50%;
+        height:70%;
+        margin: 0.625em 0 0.625em 0;
+    }
+
+    .header__p {display: inline; font-size: 1.6rem; margin-top: 0.30em;}
+
+    .menuBurger {display:none;}
+    
+
+    /* -----===== Le menu du HEADER Desktop =====----- */
+    .primary-navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto 1em auto 0;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    
+    ul li {
+        list-style: none;
+        margin: 0 auto;
+        border-left: 0.12em solid #765457;
+        display: inline-block;
+        padding: 0 0.93em;
+        position: relative;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    li a {color: #fff;}
+    
+    li a:hover {color: #C6CDB1;}
+    
+    li:hover {cursor: pointer;}
+    
+    ul li ul {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        padding-left: 0;
+        left: 0;
+        display: none;
+        background: #839371;
+    }
+    
+    ul li:hover > ul,
+    ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        min-width: 8.75em;
+        text-align: left;
+        padding-top: 1.25em;
+        box-shadow: 0 0.37em 0.62em -0.06em #808080;
+    }
+    
+    ul li ul li {
+        clear: both;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 1.25em;
+        border-style: none;
+    }
+    
+    ul li ul li a:hover {
+        padding-left: 0.62em;
+        border-left: 0.12em solid #765457;
+        transition: all 0.3s ease;
+    }
+    
+    ul li ul li a { transition: all 0.5s ease; }
+
+    
+
+    /* -----=====##### MAIN Desktop #####=====----- */
+    .main {
+        display : flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: #fff;
+        width: 95%; /* largeur de la partie MAIN */
+        height: 76.26vh; /* hauteur de la partie MAIN */
+        margin: 0 auto;
+    }
+
+    .main__div-topo {
+        margin: 30px auto;
+        text-align: justify;
+    }
+
+    .topHorizontaleDividingLine {
+        display: inline;
+        width: 63.01vw;  /* longueur du trait horizontal supérieur */
+        height: 0.18em;
+        background-color: #C6CDB1;
+        margin: 0 0 -0.62em 2.5em;
+    }
+    
+    .bottomHorizontaleDividingLine {
+        display: inline;
+        width: 53.47vw;  /* longueur du trait horizontal inférieur */
+        height: 0.06em;
+        background-color:#765457;
+        margin: -1.04em 0 0 3.75em;
+    }
+    
+    .wrapper {
+        display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    .main__div-carousel {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 55vh; 
+        margin: 5px 0 0 20px;  
+        border-right: 0.06em solid #765457;
+    }
+
+    div#sliderMobile {display: none;}
+    div#sliderDesktop {display: block;}
+
+    div#sliderDesktop { width: 80%; max-width: 37.5em; overflow: hidden}
+
+    div#sliderDesktop figure {
+        position: relative; 
+        width: 400%;
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        text-align: left;
+        animation: 30s slidy infinite;
+    }
+    
+    div#sliderDesktop figure img { width: 25%; height: auto; float: left; }
+    
+    .main__div-actu {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        padding: 2em 1.75em 1.25em 4em;
+        width: 45em;
+        height: 50vh;
+        margin-top: -1.3em;
+        margin-left: 3px;
+        border-left: 3px solid #C6CDB1;
+    }
+    
+    .h2-proch {
+        font-weight: bold;
+        font-size: 1.2em;
+        color: #785558;
+        margin-bottom: 3em;
+    }
+    
+    .main__p-proch {margin-bottom: 4em;}
+
+
+
+/* -----=====##### FOOTER Desktop #####=====----- */
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 97%;
+        height: 3em;
+        margin: 2em 0 0 1.7em;
+    }
+
+    .footer_nav {display: block;}
+
+    .secondary-navigation {display:inline;}
+
+}
+
+
+
+
+
+
